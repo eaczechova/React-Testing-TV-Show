@@ -1,4 +1,5 @@
 export const formatSeasons = allEpisodes => {
+  console.log('formatSeasons', allEpisodes)
   const seasons = {};
   allEpisodes.forEach(e => {
     if (!seasons.hasOwnProperty(`Season ${e.season}`)) {
@@ -9,3 +10,4 @@ export const formatSeasons = allEpisodes => {
   console.log(seasons);
   return seasons;
 };
+
